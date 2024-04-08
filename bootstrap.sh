@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo chsh "$(id -un)" --shell "/usr/bin/zsh"
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin main;
